@@ -1,4 +1,7 @@
-
+.websiteImg {
+  height: 100% !important;
+  width: auto;
+}
 
 .personalPortrait {
   display: block;
@@ -10,17 +13,7 @@
   border-radius: 50%;
 }
 
-@media screen and (max-width: 600px){
-  .personalPortrait {
-    display: block;
-    border: 3px solid #39A4B6;
-    border-radius: 1px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    border-radius: 50%;
-  }
-}
+
 
 .typeDesign {
   display: block;
@@ -40,8 +33,9 @@ h2, h3, h4, h5, h6 {
 
 p {
   text-align: center;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
+  line-height: 23px;
 }
 
 .spacing1 {
@@ -68,34 +62,10 @@ p {
   padding: 70px;
 }
 
-@media screen and (max-width: 600px){
-  .spacing6{
-    padding: 20px;
-  }
-}
 
-.portfolio {
-  max-width: 1000px;
-  margin: auto;
-}
 
-.aboutMe {
-  max-width: 1000px;
-  margin: auto;
-}
-
-@media screen and (max-width: 600px){
-  .aboutMe, .experience{
-    max-width: 200px;
-  }
-  .education {
-    max-width: 400px;
-    margin: auto;
-  }
-}
-
-.experience {
-  max-width: 1000px;
+.portfolio, .aboutMe, .experience {
+  max-width: 900px;
   margin: auto;
 }
 
@@ -129,26 +99,9 @@ div.gallery img {
   width: 25%;
 }
 
-@media screen and (max-width: 900px){
-  .column {
-    width: 50%;
-  }
-
-  .portfolio {
-    max-width: 500px;
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 600px){
-  .column {
-    width: 100%;
-  }
-
-  .portfolio {
-    max-width: 200px;
-    margin: auto;
-  }
+.websiteImg {
+  height: 100% !important;
+  width: auto;
 }
 
 .myImg {
@@ -179,4 +132,47 @@ footer {
 
 a.mailer {
   color: white;
+}
+
+@media screen and (max-width: 900px){
+  .column {
+    width: 50%;
+  }
+
+  .portfolio {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .aboutMe, .experience{
+    max-width: 400px;
+  }
+  .education {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .portfolio {
+    max-width: 200px;
+    margin: auto;
+  }
+  .spacing6{
+    padding: 20px;
+  }
+
+  .personalPortrait {
+    display: block;
+    border: 3px solid #39A4B6;
+    border-radius: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-radius: 50%;
+  }
 }
