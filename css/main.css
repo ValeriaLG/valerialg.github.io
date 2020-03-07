@@ -21,6 +21,12 @@
   background-color: (255, 255, 255, 0.8);
   min-height: 500px;
   clip-path: polygon(0 10%, 1600px 0, 1600px 87%, 0 100%);
+  -webkit-clip-path: polygon(0 10%, 1600px 0, 1600px 87%, 0 100%);
+}
+
+.style3.belowAboutMe {
+  display: none;
+  visibility: hidden;
 }
 
 
@@ -178,6 +184,7 @@ a.mailer {
   text-decoration: none;
 }
 
+
 @media screen and (max-width: 900px){
   .vineInterlude {
     width: 25%;
@@ -201,6 +208,7 @@ a.mailer {
 
   .parallaxMe {
     clip-path: none;
+    -webkit-clip-path: none;
   }
 
 }
@@ -234,5 +242,15 @@ a.mailer {
     margin-right: auto;
     width: 60%;
     border-radius: 50%;
+  }
+
+  .parallaxMe {
+    background: none;
+    min-height: 0px;
+  }
+
+  .style3.belowAboutMe {
+    display: block;
+    visibility: visible;
   }
 }
