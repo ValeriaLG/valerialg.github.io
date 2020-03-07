@@ -1,0 +1,6 @@
+# Error files
+debug.log
+
+# IntelliJ
+.idea/
+*.iml
