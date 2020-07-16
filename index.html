@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172851109-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-172851109-1');
+    </script>
+
   <meta name = "viewport" content = "width=device-width, intial-scale=1, shrink-to-fit=no">
   <meta name = "description" content = "Valeria's resume and portfolio.">
   <meta name="keywords" content="Valeria, Green, Resume, Portfolio, LinkedIn">
   <meta name="author" content="Valeria Green">
   <link rel = "shortcut icon" href="pictures/favicon.ico" type = "image/x-icon">
+
   <title>Valeria's Portfolio and Resume </title>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href = "css/main.css" rel = "stylesheet">
 
   <script type="text/javascript">
@@ -17,7 +27,7 @@
     $(document).ready(function() {
     $('#zen').on('mouseover', function () {
       $(this).find('.image_onBig').attr('srcset', 'pictures/picturehead(2).png');
-    })
+    });
     $('#lastModified').html("<p class='modified'>This page was last modified on " + document.lastModified + "</p>");
 
     });
@@ -110,15 +120,15 @@
     <br/>
     <h4><b>Customer Service Tech Associate</b></h4><h5>iFix Cell Phone</h5>
     <h6>2017</h6>
-    <p>I diagnosed the problems of customers&apos; devices and then checked them in for repairs and provided customer service and basic troubleshooting help over the phone</p>
+    <p>I diagnosed the problems of customers&apos; devices and then checked them in for repairs and provided customer service and basic troubleshooting help over the phone.</p>
     <br/>
     <h4><b>Coordinated Information Technology Internship</b></h4><h5>Northern Virginia Community College</h5>
     <h6>2016</h6>
-    <p>I practiced the various concepts in both Java and Python, created technical writing documents including development guides, translated code specifications into Python and Java programming languages, designed Excel spreadsheets to demonstrate Java and Python similarities, and troubleshooted IDEs and did configurations when necessary</p>
+    <p>I practiced the various concepts in both Java and Python, created technical writing documents including development guides, translated code specifications into Python and Java programming languages, designed Excel spreadsheets to demonstrate Java and Python similarities, and troubleshooted IDEs and did configurations when necessary.</p>
     <br/>
     <h4><b>Student Activities Office Assistant</b></h4><h5>Northern Virginia Community College</h5>
     <h6>2015-2016</h6>
-    <p>I designed fliers advertising campus events and activities and composed PowerPoint slideshow presentations to showcase campus events</p>
+    <p>I designed fliers advertising campus events and activities and composed PowerPoint slideshow presentations to showcase campus events.</p>
     <br/>
     <p>You can read more about my job experience at:&nbsp; &nbsp;<a href = "https://www.linkedin.com/in/valeria-green-68b27897" class = "hyperlinkedLinkedIn">
     <img src = "pictures/LinkedInLogo.png" width = "90"></a></p>
@@ -212,10 +222,10 @@
 
   <footer>
     <div class = "spacing5"> </div>
-    <p id = "footerContent"> Connect with me on: &nbsp;
+    <p class= "footerContent"> Connect with me on: &nbsp;
     <a href = "https://www.linkedin.com/in/valeria-green-68b27897">
       <img src = "pictures/LinkedInIcon.png" width = "70"></a> or via <a class="mailer" href="mailto:valerialesliegreen@gmail.com">email</a></p>
-      <p id = "footerContent"> Copyright &copy; Valeria's Resume 2020 </p>
+      <p class= "footerContent"> Copyright &copy; Valeria's Resume 2020 </p>
       <div id="lastModified"></div>
       <br/>
   </footer>

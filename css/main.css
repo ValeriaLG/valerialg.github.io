@@ -18,7 +18,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: (255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   min-height: 500px;
   clip-path: polygon(0 10%, 1600px 0, 1600px 87%, 0 100%);
   -webkit-clip-path: polygon(0 10%, 1600px 0, 1600px 87%, 0 100%);
@@ -61,7 +61,7 @@ hr.style3 {
 }
 
 hr.style3.belowExperience {
-  padding: 0px 0px 0px 0px;
+  padding: 0;
 }
 
 h2, h3, h4, h5, h6 {
@@ -139,7 +139,7 @@ div.gallery img {
 
 
 .row {
-  margin: 2px - 8px;
+  margin: 2px 8px;
 }
 
 .row,
@@ -173,7 +173,7 @@ footer {
   background: #212223;
 }
 
-#footerContent {
+.footerContent {
   color: white;
   padding: 10px;
 }
@@ -260,4 +260,20 @@ a.mailer {
     display: block;
     visibility: visible;
   }
+}
+
+@media screen and (min-width: 1617px){
+    .parallaxMe {
+        clip-path: polygon(0 10%, 100% 0, 100% 87%, 0 100%);
+        -webkit-clip-path: polygon(0 10%, 100% 0, 100% 87%, 0 100%);
+    }
+
+    h4 {
+      font-size: 22px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 26px;
+    }
 }
