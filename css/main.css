@@ -80,10 +80,6 @@ a:hover {
   text-decoration: none;
 }
 
-.style3.belowEducation {
-  padding-bottom: 70px;
-}
-
 
 .spacing5{
   padding: 10px;
@@ -98,7 +94,7 @@ a:hover {
   padding: 50px 0px 80px 0px;
 }
 
-.education {
+.education, .certifications {
   padding: 50px;
 }
 
@@ -191,7 +187,6 @@ a.mailer {
   text-decoration: none;
 }
 
-
 @media screen and (max-width: 900px){
   .vineInterlude {
     width: 15%;
@@ -227,7 +222,7 @@ a.mailer {
   .experience {
     max-width: 80%;
   }
-  .education {
+  .education, .certifications {
     max-width: 400px;
     margin: auto;
   }
