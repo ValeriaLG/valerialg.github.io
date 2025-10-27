@@ -37,11 +37,8 @@ window.addEventListener("scroll", () => {
 // --- Skill Bar Animation Triggered by Blue Line ---
 const skillBars = document.querySelectorAll('.skill-bar');
 
-// IntersectionObserver to trigger when skills scroll into view
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const bar = entry.target;
+function updateSkillBarProgress() {
+  skillBars.forEach( bar => {
       const fill = bar.querySelector('.bar-fill');
       const valueLabel = bar.querySelector('.skill-value');
 
@@ -64,15 +61,8 @@ const observer = new IntersectionObserver(entries => {
         }
       };
       requestAnimationFrame(step);
-
-      observer.unobserve(bar); // Only animate once
-    }
-  });
-}, { threshold: 0.3 }); // trigger when 30% visible
-
-skillBars.forEach(bar => observer.observe(bar));
-
-
+  })
+}
 
 
 
@@ -109,5 +99,12 @@ function updateTimelineProgress() {
   });
 }
 
-window.addEventListener("scroll", updateTimelineProgress);
+window.addEventListener("scroll", function() {
+  updateSkillBarProgress();
+}, {once: true});
+
+window.addEventListener("scroll", function() {
+  updateTimelineProgress();
+});
+
 window.addEventListener("resize", updateTimelineProgress);
