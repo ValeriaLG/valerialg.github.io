@@ -3,7 +3,7 @@ window.addEventListener("scroll", () => {
     const scrollHeight = document.body.scrollHeight - window.innerHeight;
     // const scrollProgress = Math.min(scrollTop / scrollHeight, 1);
     // change this for the speed
-    const scrollProgress = Math.min((scrollTop / scrollHeight) * 1.5, 1);
+    const scrollProgress = Math.min((scrollTop / scrollHeight) * 4, 1);
 
 
     const fillLine = document.querySelector(".fill-line");
