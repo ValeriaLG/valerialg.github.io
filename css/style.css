@@ -112,7 +112,7 @@ html, body {
   position: absolute;
   top: 164px; /* directly below the image */
   width: 8px;
-  height: 1000px;
+  height: 1200px;
   background-color: #eee;
   border-radius: 4px;
   overflow: hidden;
@@ -127,6 +127,7 @@ html, body {
   /* background-color: hsl(200, 20%, 70%); */
   background-color: hsl(192, 38%, 53%);
   border-radius: 4px;
+  /* update this to fiddle with the animation speed */
   transition: background-color 0.1s linear;
 }
 

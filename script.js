@@ -2,6 +2,7 @@ window.addEventListener("scroll", () => {
     const scrollTop = window.scrollY;
     const scrollHeight = document.body.scrollHeight - window.innerHeight;
     // const scrollProgress = Math.min(scrollTop / scrollHeight, 1);
+    // change this for the speed
     const scrollProgress = Math.min((scrollTop / scrollHeight) * 3, 1);
 
 
@@ -26,8 +27,8 @@ window.addEventListener("scroll", () => {
     // Reveal text when the line reaches it
     document.querySelectorAll('.drop-in').forEach(el => {
       const elementTop = el.getBoundingClientRect().top;
+      // when the line starts going down
       if (lineBottom > elementTop + 80) {  // +30px offset for timing
-        console.log(el)
         el.classList.add('visible');
       }
     });
