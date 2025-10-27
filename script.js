@@ -35,45 +35,44 @@ window.addEventListener("scroll", () => {
 
 
 // --- Skill Bar Animation Triggered by Blue Line ---
-const skillBars = document.querySelectorAll(".skill-bar");
+const skillBars = document.querySelectorAll('.skill-bar');
 
-const animateSkillBars = () => {
-  skillBars.forEach((bar) => {
-    const fill = bar.querySelector(".bar-fill");
-    const valueLabel = bar.querySelector(".skill-value");
-    const targetValue = parseInt(bar.dataset.skill, 10);
+// IntersectionObserver to trigger when skills scroll into view
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const bar = entry.target;
+      const fill = bar.querySelector('.bar-fill');
+      const valueLabel = bar.querySelector('.skill-value');
 
-    fill.style.width = `${targetValue}%`;
+      const years = parseFloat(bar.dataset.years);
+      const maxYears = parseFloat(bar.dataset.max) || 10;
+      const fillPercent = Math.min((years / maxYears) * 100, 100);
 
-    let currentValue = 0;
-    const step = () => {
-      if (currentValue < targetValue) {
-        currentValue++;
-        valueLabel.textContent = `${currentValue}%`;
-        requestAnimationFrame(step);
-      } else {
-        valueLabel.textContent = `${targetValue}%`;
-      }
-    };
-    requestAnimationFrame(step);
+      bar.classList.add('visible'); // fade in the bar
+      fill.style.width = `${fillPercent}%`;
+
+      // Count up to target years
+      let current = 0;
+      const step = () => {
+        if (current < years) {
+          current += 0.1; // Adjust speed
+          valueLabel.textContent = `${current.toFixed(1)} yrs`;
+          requestAnimationFrame(step);
+        } else {
+          valueLabel.textContent = `${years} yrs`;
+        }
+      };
+      requestAnimationFrame(step);
+
+      observer.unobserve(bar); // Only animate once
+    }
   });
-};
+}, { threshold: 0.3 }); // trigger when 30% visible
 
-// Observe when the blue line enters the viewport
-const lineObserver = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        animateSkillBars();      // Run the animation
-        observer.unobserve(entry.target); // Only once
-      }
-    });
-  },
-  { threshold: 0.3 } // trigger when 30% of the line is visible
-);
+skillBars.forEach(bar => observer.observe(bar));
 
-const blueLine = document.querySelector(".line-track");
-if (blueLine) lineObserver.observe(blueLine);
+
 
 
 
