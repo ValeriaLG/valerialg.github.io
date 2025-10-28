@@ -87,31 +87,8 @@ background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("..
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 2rem;
-  /* max-width: 900px; */
-  /* background: white; */
-  /* padding: 2rem 3rem; */
-  /* border-radius: 12px; */
-  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); */
 }
 
-/* .profile-section {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 3rem 1.5rem;
-}
-
-.profile-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 2rem;
-  max-width: 900px;
-  background: white;
-  padding: 2rem 3rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-} */
 
 /* Profile image and line */
 .line-profile-pic {
@@ -171,12 +148,12 @@ background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("..
 /* Scroll line attached to image */
 .line-track {
   position: absolute;
-  top: 164px; /* directly below the image */
+  top: 164px;
   width: 8px;
   height: 1500px;
   background-color: #eee;
   border-radius: 4px;
-  overflow: hidden;
+  overflow: visible;
   z-index: -1;
 }
 
@@ -333,18 +310,9 @@ button a {
 
 .skills-section {
   max-width: 600px;
-  margin: 10vh auto;
-  /* padding: 2rem;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); */
+  margin: 10vh auto 10vh 20%;
 }
 
-/* .skills-section h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #333;
-} */
 
 .skill-bar {
   margin-bottom: 2rem;
@@ -403,7 +371,7 @@ button a {
 
 .timeline-section {
   max-width: 600px;
-  margin: 10vh auto 5vh auto;
+  margin: 10vh auto 5vh 20%;
 }
 
 .timeline-wrapper {
@@ -521,7 +489,7 @@ p.timeline-desc {
 
 .projects-section {
   max-width: 600px;
-  margin: 5vh auto;
+  margin: 5vh auto 5vh 20%;
 }
 
 .projects-grid {
