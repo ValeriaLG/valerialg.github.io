@@ -1,9 +1,11 @@
+var scrollProgress;
+
 window.addEventListener("scroll", () => {
     const scrollTop = window.scrollY;
     const scrollHeight = document.body.scrollHeight - window.innerHeight;
     // const scrollProgress = Math.min(scrollTop / scrollHeight, 1);
     // change this for the speed
-    const scrollProgress = Math.min((scrollTop / scrollHeight) * 4, 1);
+    scrollProgress = Math.min((scrollTop / scrollHeight) * 1, 1);
 
 
     const fillLine = document.querySelector(".fill-line");
@@ -33,6 +35,29 @@ window.addEventListener("scroll", () => {
       }
     });
 });
+
+function pullDownPhoto() {
+  const profile = document.querySelector(".profile-photo");
+  if (!profile) return;
+
+  const rect = profile.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+
+  // Determine how far through the viewport the profile is
+  const start = windowHeight * 0.05;   // start effect when 20% of screen height above
+  const end = windowHeight * 0.95;     // end effect when 80% of screen height below
+  const progress = (windowHeight - rect.top - start) / (end - start);
+  
+  // Clamp between 0 and 1
+  const clamped = Math.min(Math.max(scrollProgress, 0), 1);
+
+  // Move overlay upward (reverse direction)
+  const translateY = clamped * -100; // from 0% to -100%
+  const overlay = profile.querySelector(".overlay");
+  overlay.style.transform = `translateY(${translateY}%)`;
+};
+
+
 
 
 // --- Skill Bar Animation Triggered by Blue Line ---
@@ -102,6 +127,7 @@ function updateTimelineProgress() {
 
 window.addEventListener("scroll", function() {
   updateSkillBarProgress();
+  pullDownPhoto();
 }, {once: true});
 
 window.addEventListener("scroll", function() {
