@@ -130,6 +130,20 @@ background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("..
   border: 6px solid #59a2b4;
 }
 
+.profile-photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url(../pictures/personalPhoto.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: 10%;
+  filter: blur(10px);
+  z-index: 0;
+}
+
 .photo {
   position: absolute;
   top: 0;
@@ -143,19 +157,15 @@ background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("..
 /* Base stays fixed */
 .photo.base {
   z-index: 1;
+  width: 600%;
+  height: 600%;
 }
 
 /* Overlay starts above and moves down */
 .photo.overlay {
   z-index: 2;
-  transform: translateY(-100%);
-
-  top: -40px;
-  left: -70px;
-  width: 300%;
+  width: 100%;
   height: auto;
-  right: 20px;
-  margin-right: 20px;
 }
 
 /* Scroll line attached to image */
@@ -280,33 +290,6 @@ background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("..
   opacity: 1;
   transform: translateY(0);
 }
-/* 
-@keyframes dropFade {
-  0% {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-  70% {
-    opacity: 1;
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-} */
-
-/* .drop-in {
-  opacity: 0;
-}
-
-.drop-in.visible {
-  animation: dropFade 0.8s ease-out forwards;
-} */
-
-/* Scroll filler */
-/* .content {
-  height: 300vh;
-} */
 
 .section-header-icon {
   display: flex;
