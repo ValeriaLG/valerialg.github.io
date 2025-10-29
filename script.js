@@ -103,6 +103,10 @@ function updateTimelineProgress() {
   });
 }
 
+
+document.getElementById("last-modified-text").innerText = `Last modified: ${document.lastModified}`
+
+
 window.addEventListener(
   "scroll",
   function () {
