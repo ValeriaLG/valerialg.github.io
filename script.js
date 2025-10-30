@@ -1,4 +1,4 @@
-window.addEventListener("scroll", () => {
+function animateScrollBlueBar() {
   const scrollTop = window.scrollY;
   const scrollHeight = document.body.scrollHeight - window.innerHeight;
   // const scrollProgress = Math.min(scrollTop / scrollHeight, 1);
@@ -33,7 +33,7 @@ window.addEventListener("scroll", () => {
       el.classList.add("visible");
     }
   });
-});
+}
 
 // --- Skill Bar Animation Triggered by Blue Line ---
 const skillBars = document.querySelectorAll(".skill-bar");
@@ -116,6 +116,7 @@ window.addEventListener(
 );
 
 window.addEventListener("scroll", function () {
+  animateScrollBlueBar();
   updateTimelineProgress();
 });
 
