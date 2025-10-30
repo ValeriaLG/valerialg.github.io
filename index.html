@@ -1,260 +1,218 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172851109-1"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Valeria's resume and portfolio.">
+    <link rel = "shortcut icon" href="./pictures/favicon.ico" type = "image/x-icon">
+    <meta name="keywords"
+        content="Valeria, Green, Resume, Portfolio, Valeria Green, web developer, ArcGIS for JavaScript SDK, Calcite Design System, Esri">
+    <meta name="author" content="Valeria Green">
+    <title>Valeria Green</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWW0HMGMF9"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'UA-172851109-1');
+        gtag('config', 'G-GWW0HMGMF9');
     </script>
-
-  <meta name = "viewport" content = "width=device-width, intial-scale=1, shrink-to-fit=no">
-  <meta name = "description" content = "Valeria's resume and portfolio.">
-  <meta name="keywords" content="Valeria, Green, Resume, Portfolio, LinkedIn">
-  <meta name="author" content="Valeria Green">
-  <link rel = "shortcut icon" href="pictures/favicon.ico" type = "image/x-icon">
-
-  <title>Valeria's Portfolio and Resume </title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link href = "css/main.css" rel = "stylesheet">
-
-  <script type="text/javascript">
-
-    $(document).ready(function() {
-    $('#zen').on('mouseover', function () {
-      $(this).find('.image_onBig').attr('srcset', 'pictures/picturehead(2).png');
-    });
-    $('#lastModified').html("<p class='modified'>This page was last modified on " + document.lastModified + "</p>");
-
-    });
-
-  </script>
-
 </head>
+
 <body>
-  <!-- navigation bar -->
-  <nav class = "navbar navbar-inverse navbar-fixed-top">
-    <div class = "container-fluid">
-        <div class = "navbar-header">
-          <button type = "button" class = "navbar-toggle" data-toggle ="collapse" data-target = "#myNavbar">
-            <span class = "icon-bar"></span>
-            <span class = "icon-bar"></span>
-            <span class = "icon-bar"></span>
-          </button>
+    <div class="outer-outer-container">
+        <div class="outer-container">
+            <section class="profile-section">
+                <div class="profile-container">
+                    <div class="line-profile-pic">
+                        <div class="profile-photo">
+                            <img class="photo overlay" src="./pictures/pfp-transparent.png" alt="Profile picture 2">
+                        </div>
+                        <div class="line-track">
+                            <div class="fill-line"></div>
+                        </div>
+                    </div>
+
+                    <div class="profile-info">
+                        <h1 class="fade-in-name">Hi, I'm <span class="highlight">Valeria Green!</span></h1>
+                        <hr>
+                        <h2>Web Developer</h2>
+                        <p>Frontend Software Engineer with 5+ years of experience building complex web applications.
+                            Skilled
+                            in JavaScript, React, modern front-end frameworks, and performance optimization, with
+                            hands-on
+                            expertise in ArcGIS Maps SDK for JavaScript and spatial data visualization. Proven ability
+                            to
+                            deliver production-ready features, including geospatial visualizations of 1M+ points and
+                            React
+                            SPAs built with a strong focus on accessibility and usability. Collaborative team player
+                            experienced in agile development, creating user-focused solutions, and supporting iterative
+                            development.</p>
+                            <div id="last-modified-text"></div>
+
+                        <div class="profile-icons">
+                            <!-- <button><i class="fa-solid fa-download"></i></button> -->
+                            <button><a href="mailto:valerialesliegreen@gmail.com"><i
+                                        class="fa-solid fa-envelope"></i></a></button>
+                            <button><a href="https://www.linkedin.com/in/valeria-green-68b27897/" target="_blank"><i
+                                        class="fa-brands fa-linkedin"></i></a></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="content">
+                <div class="introduction-section">
+
+                    <section class="skills-section drop-in">
+
+                        <div class="section-header-icon">
+                            <i class="fa-solid fa-gauge-simple-high"></i>
+                            <h2>My Skills</h2>
+                        </div>
+
+                        <div class="skill-bar" data-years="6" data-max="10">
+                            <span class="skill-label">HTML</span>
+                            <div class="bar">
+                                <div class="bar-fill"></div>
+                            </div>
+                            <span class="skill-value">0 yrs</span>
+                        </div>
+
+                        <div class="skill-bar" data-years="6" data-max="10">
+                            <span class="skill-label">CSS</span>
+                            <div class="bar">
+                                <div class="bar-fill"></div>
+                            </div>
+                            <span class="skill-value">0 yrs</span>
+                        </div>
+
+                        <div class="skill-bar" data-years="6" data-max="10">
+                            <span class="skill-label">JavaScript</span>
+                            <div class="bar">
+                                <div class="bar-fill"></div>
+                            </div>
+                            <span class="skill-value">0 yrs</span>
+                        </div>
+
+                        <div class="skill-bar" data-years="3" data-max="10">
+                            <span class="skill-label">Figma</span>
+                            <div class="bar">
+                                <div class="bar-fill"></div>
+                            </div>
+                            <span class="skill-value">0 yrs</span>
+                        </div>
+
+                        <div class="skill-bar" data-years="1" data-max="10">
+                            <span class="skill-label">TypeScript</span>
+                            <div class="bar">
+                                <div class="bar-fill"></div>
+                            </div>
+                            <span class="skill-value">0 yrs</span>
+                        </div>
+                    </section>
+
+
+                    <!-- <div class="education-block drop-in">
+                        <div class="section-header-icon">
+                            <i class="fa-solid fa-school"></i>
+                            <h2 class="section-header">
+                                Education
+                            </h2>
+                        </div>
+                        <p>
+
+                            <b>B.S. INFORMATION TECHNOLOGY</b><br/>
+                            <b>George Mason University</b> — Fairfax, VA | 2019<br/>
+                            • Concentration: Web Development & Multimedia<br/>
+                            • Minor: Computer Science
+                        </p>
+                    </div> -->
+
+                    <section class="timeline-section drop-in">
+                        <div class="section-header-icon">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <h2>Career Timeline</h2>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline">
+                                <div class="timeline-progress"></div>
+
+                                <div class="timeline-item" data-label="Northrop Grumman">2018</div>
+                                <div class="timeline-item" data-label="AAAS">2019</div>
+                                <div class="timeline-item" data-label="Pragmatics">2019</div>
+                                <div class="timeline-item" data-label="Booz Allen Hamilton">2021</div>
+                            </div>
+
+                            <!-- Always-visible description container -->
+                            <div class="timeline-descriptions">
+                                <p class="timeline-desc"><b>2018</b> – Creative Technologist Intern @ Northrop Grumman.
+                                </p>
+                                <p class="timeline-desc"><b>Jan 2019</b> – Communications & Web Development Intern @
+                                    AAAS.</p>
+                                <p class="timeline-desc"><b>May 2019</b> – Software Developer @ Pragmatics.</p>
+                                <p class="timeline-desc"><b>2021</b> – Software Engineer, 2 @ Booz Allen Hamilton.</p>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="projects-section drop-in">
+                        <div class="section-header-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            <h2>Projects</h2>
+                        </div>
+
+                        <div class="projects-grid drop-in">
+                            <div class="project-card">
+                                <img src="./pictures/discolorPreview.png" alt="Discolor Preview App">
+                                <div class="project-info">
+                                    <h3>Discolor App</h3>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <img src="./pictures/resumeVersion2.png" alt="Alternate Resume Version">
+                                <div class="project-info">
+                                    <h3>Resume Version 2</h3>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <img src="./pictures/admissions.png" alt="George Mason University Redesign">
+                                <div class="project-info">
+                                    <h3>George Mason University</h3>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <img src="./pictures/conventionsPreview.png" alt="Conventions Informational">
+                                <div class="project-info">
+                                    <h3>Conventions Informational</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
         </div>
-      <div class = "collapse navbar-collapse" id = "myNavbar">
-        <ul class = "nav navbar-nav">
-          <li class = "active"> <a href = "#bannerTop">Home </a></li>
-          <li class = "dropdown">
-              <li><a href= "#aboutMe">About Me</a></li>
-              <li><a href = "#experience">Experience</a></li>
-              <li><a href = "#education">Education</a> </li>
-              <li> <a href= "#certifications">Certifications</a></li>
-              <li> <a href= "#portfolio">Portfolio</a></li>
-          </li>
-        </ul>
-      </div>
-  </div>
-  </nav>
 
-    <!-- header -->
-  <section class = "bannerTop" id="bannerTop">
-    <picture id = "zen">
-      <source media = "(min-width: 600px)" srcset = "pictures/preMoused.png" style = "width:100%;height:auto" class = "image_onBig" id = "image_onBig">
-      <source media = "(min-width: 400px)" srcset = "pictures/picturehead(2).png" style = "width:100%;height:auto">
-      <img srcset = "pictures/picturehead(2).png" style = "width:100%;height:auto">
-    </picture>
-  </section>
-
-  <hr class="style3 aboveAboutMe">
-
-  <section class = "aboutMe" id = "aboutMe">
-    <div class = "introHeader">
-      <h2> About me </h2>
-      <img class = "vineInterlude" src = "pictures/vine-interlude.png">
+        
     </div>
-
-    <h4> Who I Am </h4>
-    <br/>
-    <p>
-    I'm a former student of George Mason University who has finished a Bachelors in Information Technology with a concentration in Web Development and Multimedia and a minor in Computer Science.
-    </p>
-    <br/>
-    <h4> My Interests </h4>
-    <br/>
-    <p>
-    I'm interested is contributing to a company by creating and designing web pages. I aim to bring together design principles and programming skills in my line of work.
-    </p>
-    <br/>
-    <h4> My Accomplishments </h4>
-    <br/>
-    <p>
-    During my educational career, I have obtained many new skills and learned new programming languages like JavaScript, Java, Python, HTML, and more. </p><p>Through my experience in the professional environment, I have gained hands-on experience with a high in demand frontend framework like ReactJs as well as design tools such as Photoshop and Illustrator. I utilize Adobe Xd to create my wireframes for high level layouts of webpages before developing them. I follow TDD practices by testing my ReactJs applications with Jest and Enzyme.</p><p>Being in the field of technology and design, I like to keep myself keep abreast of the newest trends in web development outside of the workplace by continuously putting my skills to practice.
-    </p>
-  </section>
-
-  <hr class="style3 belowAboutMe">
-  <div class="parallaxMe"></div>
-  <section class = "experience" id = "experience">
-    <h2 class="relevantHeader">Relevant Experience</h2>
-
-    <h4><b>Software Developer</b></h4>
-    <h5>Pragmatics</h5>
-    <h6>2019</h6>
-    <p>I assist in developing dynamic single page applications with ReactJS, JavaScript and NPM.</p>
-    <br/>
-    <h4><b>Communications & Web Development Spring Intern</b></h4><h5>AAAS S&TPF</h5>
-    <h6>2019</h6>
-    <p>I created monthly web page newsletters and blogs for science and technology fellows on Drupal and constructed monthly newsletter emails on Marketo.</p>
-    <br/>
-    <h4><b>Creative Technologist Intern</b></h4><h5>Northrop Grumman</h5>
-    <h6>2018</h6>
-    <p>I rapidly created and maintained digital content in various forms including webpages, graphic design, and newsletter templates.</p>
-    <br/>
-    <h4><b>Teaching Assistant for CS Principles of Computing</b></h4><h5>George Mason University</h5>
-    <h6>2017</h6>
-    <p>I assisted students with understanding concepts on their Python and HTML programming assignments.</p>
-    <br/>
-    <h4><b>Customer Service Tech Associate</b></h4><h5>iFix Cell Phone</h5>
-    <h6>2017</h6>
-    <p>I diagnosed the problems of customers&apos; devices and then checked them in for repairs and provided customer service and basic troubleshooting help over the phone.</p>
-    <br/>
-    <h4><b>Coordinated Information Technology Internship</b></h4><h5>Northern Virginia Community College</h5>
-    <h6>2016</h6>
-    <p>I practiced the various concepts in both Java and Python, created technical writing documents including development guides, translated code specifications into Python and Java programming languages, designed Excel spreadsheets to demonstrate Java and Python similarities, and troubleshooted IDEs and did configurations when necessary.</p>
-    <br/>
-    <h4><b>Student Activities Office Assistant</b></h4><h5>Northern Virginia Community College</h5>
-    <h6>2015-2016</h6>
-    <p>I designed fliers advertising campus events and activities and composed PowerPoint slideshow presentations to showcase campus events.</p>
-    <br/>
-    <p>You can read more about my job experience at:&nbsp; &nbsp;<a href = "https://www.linkedin.com/in/valeria-green-68b27897" class = "hyperlinkedLinkedIn">
-    <img src = "pictures/LinkedInLogo.png" width = "90"></a></p>
-  </section>
-  <hr class="style3 belowExperience">
-
-  <section class = "education" id = "education">
-
-    <h2>Education</h2>
-    <br>
-    <br>
-    <h4><b>George Mason University</b></h4>
-    <h6>2017-2019</h6>
-    <h5>Information Technology B.S. | Concentration in Web Development and Multimedia</h5>
-    <h5>Computer Science Minor</h5>
-    <br/>
-    <h4><b>Northern Virginia Community College</b></h4>
-    <h6>2014-2016</h6>
-    <h5>Information Technology A.S.</h5>
-    <h5>General Studies A.S.</h5>
-
-  </section>
-
-  <hr class="style3 belowEducation">
-
-  <section class = "certifications" id = "certifications">
-
-    <h2>Certifications</h2>
-    <br>
-    <br>
-    <h4><b>AWS Certified Cloud Practitioner</b></h4>
-    <h6>Issued 2020 - Expires 2023</h6>
-    <h6>Issuer: Amazon Web Services (AWS)</h6>
-    <br>
-    <br>
-    <h4><b>Certified Associate Configurator</b></h4>
-    <h6>Issued 2020 - Doesn't Expire</h6>
-    <h6>Issuer: Unqork</h6>
-
-  </section>
-
-  
-  <hr class="style3 belowCertifications">
-
-  <section class= "portfolio" id = "portfolio">
-    <h2>Some Samples of my Work</h2>
-    <br>
-    <br>
-
-      <div class = "row">
-        <div class = "column">
-          <div class = "gallery">
-            <a target = "_blank" href = "pictures/ACenturyofTypeDesignposter.jpg">
-        <img class = "myImg" src = "pictures/ACenturyofTypeDesignposter.jpg"  height = "300"></a>
-    </div>
-    </div>
-
-    <div class = "column">
-    <div class = "gallery">
-      <a target = "_blank" href = "pictures/animallogos.png">
-        <img  class = "myImg" src = "pictures/animallogos.png" height = "500" alt = "click to enlarge"></a>
-      </div>
-    </div>
-
-    <div class = "column">
-    <div class = "gallery">
-      <a target = "_blank" href = "pictures/Arizonastamp.png">
-        <img class = "myImg" src = "pictures/Arizonastamp.png" style ='height: 100%' alt = "click to enlarge"></a>
-      </div>
-    </div>
-
-    <div class = "column">
-    <div class = "gallery">
-      <a target = "_blank" href = "pictures/martialArtsSmol.jpg">
-        <img class = "myImg" src = "pictures/martialArtsSmol.jpg" alt = "click to enlarge"></a>
-      </div>
-    </div>
-    <div class = "column">
-    <div class = "gallery">
-      <a target = "_blank" href = "https://valerialg.github.io/conventions/">
-        <img class = "myImg" src = "pictures/conventionsPreview.png" alt = "click to visit">
-        <img class = "myImg" src = "pictures/conventionsPreview2.png" alt = "click to visit">
-      </a>
-      </div>
-    </div>
-    <div class = "column">
-    <div class = "gallery">
-      <a target = "_blank" href = "https://valerialg.github.io/admissions/">
-        <img class = "myImg" src = "pictures/admissions.png" alt = "click to visit">
-      </a>
-      </div>
-    </div>
-    <div class = "column">
-    <div class = "gallery">
-      <a target = "_blank" href = "https://valerialg.github.io/ResumeVersion2/">
-        <img class = "myImg" src = "pictures/resumeVersion2.png" alt = "click to visit">
-      </a>
-      </div>
-    </div>
-    <div class = "column">
-      <div class = "gallery">
-        <a target = "_blank" href = "https://valerialg.github.io/discolor/">
-          <img class = "myImg" src = "pictures/discolorPreview.png" alt = "click to visit">
-        </a>
+    <!-- <div class="parallax-me"></div>
+    <div class="footer-parallax">
+        <div class="inner-footer">
+            something
         </div>
-      </div>
+    </div> -->
 
-    </div>
-    <br/>
-    <br/>
-    <p>You can find more samples of my work at:&nbsp; <a href = "https://drive.google.com/drive/folders/0BybRrJrtDILwbTBUcnFRMWZQa2M?usp=sharing">
-    <img src = "pictures/GoogleLogo.png" width = "50"></a></p>
-    <br/>
-    <br/>
-  </section>
-
-
-  <footer>
-    <div class = "spacing5"> </div>
-    <p class= "footerContent"> Connect with me on: &nbsp;
-    <a href = "https://www.linkedin.com/in/valeria-green-68b27897">
-      <img src = "pictures/LinkedInIcon.png" width = "70"></a> or via <a class="mailer" href="mailto:valerialesliegreen@gmail.com">email</a></p>
-      <p class= "footerContent"> Copyright &copy; Valeria's Resume 2020 </p>
-      <div id="lastModified"></div>
-      <br/>
-  </footer>
+    <script src="./script.js"></script>
 </body>
+
 </html>
