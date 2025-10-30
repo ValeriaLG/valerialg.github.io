@@ -379,7 +379,7 @@ button a {
 .timeline-wrapper {
   position: relative;
   max-width: 1000px;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .timeline {
@@ -438,17 +438,37 @@ button a {
 /* Descriptions below timeline */
 .timeline-descriptions {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 80px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem 4rem;
+  max-width: 1000px;
+  margin: 1rem auto 0;
+  text-align: left;
+  position: relative;
 }
 
-p.timeline-desc {
+.timeline-desc {
+  position: relative;
+  padding-top: 1.2rem;
+  border-top: 4px solid #5a9fbf;
+  transition: all 0.3s ease;
+}
+
+.timeline-desc:hover {
+  border-top-color: #0074ff;
+  transform: translateY(-4px);
+}
+
+.timeline-desc h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1d2f3b;
+  margin-bottom: 0.4rem;
+}
+
+.timeline-desc p {
   font-size: 0.9rem;
-  line-height: 1.1rem;
-  color: #555;
-  opacity: 0;
-  transform: translateY(15px);
-  transition: all 0.6s ease;
+  color: #444;
+  line-height: 1.5;
 }
 
 .timeline-desc.visible {
