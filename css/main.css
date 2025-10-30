@@ -376,6 +376,10 @@ button a {
   margin: 10vh auto 5vh 20%;
 }
 
+.timeline-section .section-header-icon {
+  margin-bottom: 10px;
+}
+
 .timeline-wrapper {
   position: relative;
   max-width: 1000px;
