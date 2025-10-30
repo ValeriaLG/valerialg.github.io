@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Valeria's resume and portfolio.">
     <link rel="shortcut icon" href="./pictures/favicon.ico" type="image/x-icon">
-    <meta http-equiv="Content-Security-Policy" content="
-          default-src 'self';
-          img-src 'self' https://www.googletagmanager.com https://www.google-analytics.com;
-          script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com;
-          style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;
-          font-src 'self' https://cdnjs.cloudflare.com;
-          object-src 'none';
-        ">
+    <meta http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com;
+        connect-src 'self' ws://127.0.0.1:3001;
+        style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;
+        font-src 'self' https://cdnjs.cloudflare.com;
+        object-src 'none';
+      ">
 
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=()">
