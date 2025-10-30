@@ -574,6 +574,54 @@ button a {
   font-size: 0.7em;
 }
 
+/* scroll indicator */
+
+.scroll-hint {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(93, 93, 93);
+  font-size: 0.9rem;
+  opacity: 0.8;
+  animation: fadeMove 1.5s ease-in-out infinite;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.scroll-hint.hide {
+  opacity: 0;
+  animation: none;
+  visibility: hidden;
+}
+
+.arrow {
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid rgb(93, 93, 93);
+  border-bottom: 2px solid rgb(93, 93, 93);
+  transform: rotate(-45deg);
+  margin-top: 5px;
+}
+
+@keyframes fadeMove {
+
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(8px);
+    opacity: 0.3;
+  }
+}
+
+
 /* Responsive layout */
 @media (max-width: 800px) {
   .line-track {
@@ -711,6 +759,10 @@ button a {
     height: auto;
     width: auto;
     border-radius: 10px;
+  }
+
+  .scroll-hint {
+    display: none;
   }
 }
 

@@ -1,3 +1,8 @@
+function scrollIndicator() {
+  const hint = document.querySelector(".scroll-hint");
+  if (window.scrollY > 50) hint.classList.add("hide");
+}
+
 function animateScrollBlueBar() {
   const scrollTop = window.scrollY;
   const scrollHeight = document.body.scrollHeight - window.innerHeight;
@@ -118,6 +123,7 @@ window.addEventListener(
 window.addEventListener("scroll", function () {
   animateScrollBlueBar();
   updateTimelineProgress();
+  scrollIndicator();
 });
 
 window.addEventListener("resize", updateTimelineProgress);
