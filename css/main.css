@@ -36,6 +36,7 @@ body {
   background-size: cover;
   background-position-x: -20%;
   filter: blur(10px);
+  -webkit-filter: blur(0px);
   z-index: 0;
 }
 
@@ -121,6 +122,7 @@ body {
   background-size: cover;
   background-position-y: 10%;
   filter: blur(10px);
+  -webkit-filter: blur(0px);
   z-index: 0;
 }
 
