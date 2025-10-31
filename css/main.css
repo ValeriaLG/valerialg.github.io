@@ -36,7 +36,6 @@ body {
   background-size: cover;
   background-position-x: -20%;
   filter: blur(10px);
-  -webkit-filter: blur(0px);
   z-index: 0;
 }
 
@@ -122,7 +121,6 @@ body {
   background-size: cover;
   background-position-y: 10%;
   filter: blur(10px);
-  -webkit-filter: blur(0px);
   z-index: 0;
 }
 
@@ -623,6 +621,11 @@ button a {
   }
 }
 
+.is-safari .outer-outer-container::before,
+.is-safari .footer-parallax::before,
+.is-safari .profile-photo::before {
+  filter: blur(0px);
+}
 
 /* Responsive layout */
 @media (max-width: 800px) {

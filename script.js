@@ -1,3 +1,7 @@
+if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+  document.body.classList.add("is-safari");
+}
+
 function scrollIndicator() {
   const hint = document.querySelector(".scroll-hint");
   if (window.scrollY > 50) hint.classList.add("hide");
