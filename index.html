@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Valeria's resume and portfolio.">
     <link rel="shortcut icon" href="./pictures/favicon.ico" type="image/x-icon">
-    <meta http-equiv="Content-Security-Policy"
-      content="
+    <meta http-equiv="Content-Security-Policy" content="
         default-src 'self';
         script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com;
-        connect-src 'self' ws://127.0.0.1:3001;
         style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;
         font-src 'self' https://cdnjs.cloudflare.com;
         object-src 'none';
@@ -18,8 +16,7 @@
 
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=()">
-    <meta name="keywords"
-        content="Valeria, Green, Resume, Portfolio, Valeria Green, web developer">
+    <meta name="keywords" content="Valeria, Green, Resume, Portfolio, Valeria Green, web developer">
     <meta name="author" content="Valeria Green">
     <title>Valeria Green</title>
     <link rel="stylesheet" href="./css/main.css" />
@@ -58,15 +55,30 @@
                         <h1 class="fade-in-name">Hi, I'm <span class="highlight">Valeria Green!</span></h1>
                         <hr>
                         <h2>Web Developer</h2>
-                        <p>A front-end engineer with over five years of experience building enterprise-scale applications using React, JavaScript, and modern web technologies. I’ve architected high-performance, accessible interfaces for federal clients, led UI design-system initiatives, and delivered seamless API-driven workflows in data-rich environments. My work spans full software lifecycles—from requirement design to deployment and optimization—always focused on usability, maintainability, and impact. Explore my portfolio to see the side projects I’ve built and the ideas I’ve brought to life.</p>
+                        <p>A front-end engineer with over five years of experience building enterprise-scale
+                            applications using React, JavaScript, and modern web technologies. I’ve architected
+                            high-performance, accessible interfaces for federal clients, led UI design-system
+                            initiatives, and delivered seamless API-driven workflows in data-rich environments. My work
+                            spans full software lifecycles—from requirement design to deployment and optimization—always
+                            focused on usability, maintainability, and impact. Explore my portfolio to see the side
+                            projects I’ve built and the ideas I’ve brought to life.</p>
                         <div id="last-modified-text"></div>
 
                         <div class="profile-icons">
                             <!-- <button><i class="fa-solid fa-download"></i></button> -->
-                            <button><a href="mailto:valerialesliegreen@gmail.com"><i
-                                        class="fa-solid fa-envelope"></i></a></button>
-                            <button><a href="https://www.linkedin.com/in/valeria-green-68b27897/" target="_blank"><i
-                                        class="fa-brands fa-linkedin"></i></a></button>
+                            <button aria-label="Email Button" title="Email Button">
+                                <a title="Email me link" aria-label="Email me link"
+                                    href="mailto:valerialesliegreen@gmail.com">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                            </button>
+                            <button aria-label="LinkedIn Button" title="LinkedIn Button">
+                                <a title="My LinkedIn link" aria-label="My LinkedIn link"
+                                    href="https://www.linkedin.com/in/valeria-green-68b27897/" target="_blank">
+                                    <i class="fa-brands fa-linkedin">
+                                    </i>
+                                </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -159,7 +171,8 @@
 
                         <div class="projects-grid drop-in">
                             <div class="project-card">
-                                <a target="_blank" href="https://valerialg.github.io/discolor/" title="Discolor App">
+                                <a target="_blank" href="https://valerialg.github.io/discolor/"
+                                    aria-label="Discord Preview App link" title="Discolor Preview App link">
                                     <img src="./pictures/discolorPreview.png" alt="Discolor Preview App">
                                     <div class="project-info">
                                         <h3>Discolor App</h3>
@@ -169,7 +182,7 @@
 
                             <div class="project-card">
                                 <a target="_blank" href="https://valerialg.github.io/ResumeVersion2/"
-                                    title="Resume Version 2">
+                                    aria-label="Resume Version 2 link" title="Resume Version 2 link">
                                     <img src="./pictures/resumeVersion2.png" alt="Alternate Resume Version">
                                     <div class="project-info">
                                         <h3>Resume Version 2</h3>
@@ -179,6 +192,7 @@
 
                             <div class="project-card">
                                 <a target="_blank" href="https://valerialg.github.io/admissions/"
+                                    aria-label="George Mason University admissions link"
                                     title="George Mason University admissions">
                                     <img src="./pictures/admissions.png" alt="George Mason University Redesign">
                                     <div class="project-info">
@@ -189,7 +203,7 @@
 
                             <div class="project-card">
                                 <a target="_blank" href="https://valerialg.github.io/conventions/"
-                                    title="Conventions Websites">
+                                    aria-label="Conventions Websites link" title="Conventions Websites">
                                     <img src="./pictures/conventionsPreview.png" alt="Conventions Informational">
                                     <div class="project-info">
                                         <h3>Conventions Informational</h3>
