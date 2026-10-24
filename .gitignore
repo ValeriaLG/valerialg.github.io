@@ -4,3 +4,5 @@ debug.log
 # IntelliJ
 .idea/
 *.iml
+
+.DS_Store
