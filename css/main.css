@@ -31,7 +31,7 @@ body {
   inset: 0;
   top: 0;
   bottom: 0;
-  background-image: url(../pictures/personalPhoto.jpeg);
+  background-image: url(../pictures/photo_no_person.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position-x: -20%;
